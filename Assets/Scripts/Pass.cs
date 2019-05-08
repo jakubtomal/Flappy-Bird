@@ -15,6 +15,7 @@ public class Pass : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         level.AddScore();
+        GetComponent<BoxCollider2D>().isTrigger = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
